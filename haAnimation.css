@@ -1,0 +1,19 @@
+.haAnimation {
+	pointer-events: visible !important;
+	transition-property: haAnimation;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(.68,-0.55,.27,1.55);	
+}
+#arc1 {	
+	transition-property: other, haAnimation;
+	transition-duration: 0.75s, 2s;
+	transition-timing-function: ease, linear;	
+}
+#arc2 {
+	--haAnimationProgress: 10%;
+	transition-duration: 1s;
+	transition-timing-function: linear;	
+}
+#arc2.new {
+	--haAnimationProgress: 50%;
+}

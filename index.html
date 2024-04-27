@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>haAnimation test</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="haAnimation.css">
+	<script src="main.js"></script>
+	<script src="haAnimation.js"></script>
+</head>
+<body>
+<div class="block">
+	<span>experimenting haAnimation plug-in</span>
+	<span>clicks on SVGs will make them animate</span>
+	<div class="container">
+		<svg id="menu" class="haAnimation" viewBox="0 0 100 100">
+			<path d="M 90 10 c -10 0 -70 0 -80 0 M 90 50 l -80 0 M 90 90 c -10 0 -70 0 -80 0"
+				data-destination="M 90 50 c -10 -5 -35 -30 -40 -40 M 90 50 l -80 0 M 90 50 c -10 5 -35 30 -40 40"
+				fill-opacity="0"
+				stroke-width="20%"
+				stroke-linecap="round">
+			</path>
+		</svg>
+	</div>
+	<div class="container">
+		<svg id="search" class="haAnimation" viewBox="0 0 100 100">
+			<path d="M 10 40 c 0 40 60 40 60 0 m 0 0 c 0 -40 -60 -40 -60 0 M 61.2132034355964 61.2132034355964 L 90 90"
+				data-destination="M 10 50 c 10 5 35 30 40 40 m 0 -80 c -5 10 -30 35 -40 40 M 10 50 L 90 50"
+				fill-opacity="0"
+				stroke-width="20%"
+				stroke-linecap="round">
+			</path>
+		</svg>
+	</div>
+	<div class="container">
+		<svg id="fetch1" class="haAnimation" viewBox="0 0 100 100">
+			<path d="M 50 10 c -53.3333333333333 0 -53.3333333333333 80 0 80 m 0 0 c 53.3333333333333 0 53.3333333333333 -80 0 -80"
+				data-destination="M 10 50 c 10 5 35 30 40 40 m 0 0 c 10 -20 30 -70 40 -80"
+				fill-opacity="0"
+				stroke-width="20%"
+				stroke-linecap="round">
+			</path>
+		</svg>
+	</div>
+	<div class="container">
+		<svg id="fetch2" class="haAnimation" viewBox="0 0 100 100">
+			<path d="M 50 10 c -53.3333333333333 0 -53.3333333333333 80 0 80 m 0 0 c 53.3333333333333 0 53.3333333333333 -80 0 -80"
+				data-destination="M 10 10 c 28.2842712474619 28.2842712474619 51.7157287525381 51.7157287525381 80 80 m -80 0 c 28.2842712474619 -28.2842712474619 51.7157287525381 -51.7157287525381 80 -80"
+				fill-opacity="0"
+				stroke-width="20%"
+				stroke-linecap="round">
+			</path>
+		</svg>
+	</div>
+	<div class="container">
+		<svg id="result" class="haAnimation" viewBox="0 0 100 100">
+			<path d="M 5 5 c 28.2842712474619 28.2842712474619 61.7157287525381 61.7157287525381 90 90 m -90 0 c 28.2842712474619 -28.2842712474619 61.7157287525381 -61.7157287525381 90 -90"
+				data-destination="M 5 50 c 10 5 40 35 45 45 m 0 0 c 10 -20 35 -80 45 -90"
+				fill-opacity="0"
+				stroke-width="10%"
+				stroke-linecap="round">
+			</path>
+		</svg>
+	</div>
+	<div class="container">
+		<svg id="eye" class="haAnimation" viewBox="0 0 100 100">
+			<mask id="mask">
+				<path d="M 0 0 l 0 100 l 100 0 l 0 -100 z"
+					fill="white"
+					stroke-width="0">
+				</path>
+				<path d="M 5 45 c 15 33.3333333333333 75 33.3333333333333 90 0 l 5 0 l 0 -45 l -100 0 l 0 45 z"
+					data-destination="M 5 55 c 15 -33.3333333333333 75 -33.3333333333333 90 0 l 5 0 l 0 -55 l -100 0 l 0 55 z"
+					fill="black"
+					stroke-width="0">
+				</path>
+			</mask>
+			<path d="M 35 45 c 0 20 30 20 30 0 c 0 -20 -30 -20 -30 0 z"		
+				data-destination="M 35 65 c 0 20 30 20 30 0 c 0 -20 -30 -20 -30 0 z"
+				mask="url(#mask)">
+			</path>
+			<path d="M 5 45 c 15 33.3333333333333 75 33.3333333333333 90 0 M 18.68 61 L 7.431 77.536 M 38.84 69 L 35.256 88.676 M 61.16 69 L 64.744 88.676 M 81.32 61 L 92.569 77.536"
+				data-destination="M 5 55 c 15 -33.3333333333333 75 -33.3333333333333 90 0 M 18.68 39 L 7.431 22.464 M 38.84 31 L 35.256 11.324 M 61.16 31 L 64.744 11.324 M 81.32 39 L 92.569 22.464"
+				fill-opacity="0"
+				stroke-width="10%"
+				stroke-linecap="round">
+			</path>
+		</svg>
+	</div>
+	<div class="container">
+		<svg id="arrow" class="haAnimation" viewBox="0 0 100 100">
+			<path d="M 75 20 L 25 50 L 75 80 Z"			
+				data-destination="M 25 20 L 75 50 L 25 80 Z"
+				stroke-width="0">
+			</path>
+			<path d="M 75 20 L 25 50 m 0 0 L 75 80 m 0 0 L 75 20"			
+				data-destination="M 25 20 L 75 50 m 0 0 L 25 80 m 0 0 L 25 20"
+				fill-opacity="0"
+				stroke-width="20%"
+				stroke-linecap="round">
+			</path>
+		</svg>
+	</div>
+</div>
+<div class="block">
+	<span>experimenting mutation observers</span>
+	<span>clicks on buttons or SVGs will make them animate</span>
+	<div class="container">
+		<svg id="arc1" class="haAnimation" viewBox="0 0 100 100">
+			<path d="M 10 50 c 0 53.3333333333333 80 53.3333333333333 80 0"
+				data-destination="M 5 50 c 0 -60 90 -60 90 0"
+				fill-opacity="0"
+				stroke-width="10%"
+				stroke-linecap="round">
+			</path>
+		</svg>
+		<input type="text" name="progress" value="90%">
+		<button onclick="makeProgress(this)">Set Progress</button>
+	</div>
+	<div class="container">
+		<svg id="arc2" class="haAnimation" viewBox="0 0 100 100">
+			<path d="M 10 50 c 0 53.3333333333333 80 53.3333333333333 80 0"
+				data-destination="M 5 50 c 0 -60 90 -60 90 0"
+				fill-opacity="0"
+				stroke-width="10%"
+				stroke-linecap="round">
+			</path>
+		</svg>
+		<button onclick="toggleNew(this, 1)">Add Class</button>
+		<button onclick="toggleNew(this, 0)">Remove Class</button>
+	</div>
+</div>
+</body>
+</html>
